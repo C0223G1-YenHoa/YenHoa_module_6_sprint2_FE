@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.ab {
+    background: url("./596893b1011b8.jpg")  center;
+    /* background-size: cover; */
+    position: relative;
+    width: 100%;
+    max-height: 150vh;
+    padding: 1px;
+}
+
+.qr-card {
+
+    width: 380px;
+    margin: 30px auto;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.75);
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+
+}
+.qr-card .form {
+    background: #FFC533;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+}
+
+.qr-card .form input {
+    flex: 9;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.qr-card .form i {
+    flex: 1;
+    line-hight: 2;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+div.qr-card #qrcode {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ac a,
+.ac a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.ac a:hover{
+  color: #ffc451;
+
+}
+
+body {
+    overflow-x: hidden;
+  }
+  
+  /* Ẩn thanh cuộn dọc */
+  body::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #F5F5F5;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
