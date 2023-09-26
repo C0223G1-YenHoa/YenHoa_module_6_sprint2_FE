@@ -9,6 +9,16 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Login from './components/LoginAccount';
 import SignUp from './components/Signup';
+import ConfirmEmail from './components/ConfirmEmail';
+import CustomerDetail from './components/CustomerDetail';
+import Reservation from './components/Reservation';
+import QR from './components/QR';
+import Scanner from './components/Scanner';
+import History from './components/History';
+import Recharge from './components/Recharge';
+import Done from './components/Return';
+import ChatRoom from './components/ConnectSocket';
+import Error from './components/Error';
 
 
 
@@ -20,7 +30,17 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/recharge' element={<Recharge />} />
+        <Route path='/return' element={<Done />} />
+        <Route path='/history/:id' element={<History />} />
+        <Route path='/qr' element={<QR />} />
+        <Route path='/scanner' element={<Scanner />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/error' element={<Error />} />
+        <Route path='/detail' element={<CustomerDetail />} />
+        <Route path='/reservation' element={<Reservation />} />
+        <Route path='/verify/:code' element={<ConfirmEmail />} />
+        
       </Routes>
       <Footer />
     </BrowserRouter>

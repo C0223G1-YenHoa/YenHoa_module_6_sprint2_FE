@@ -1,12 +1,17 @@
+import { useEffect } from "react"
 
 
 
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+    
     return (
         <>
-            <div>
-                <section id="hero" className="d-flex align-items-center justify-content-center">
-                    <div className="container" data-aos="fade-up">
+            <div id="style-8" >
+                <section id="hero" className="d-flex align-items-center justify-content-center" >
+                    <div className="container" data-aos="fade-up"  >
                         <div className="row justify-content-center" data-aos="fade-up" data-aos-delay={150}>
                             <div className="col-xl-6 col-lg-8">
                                 <h1>YanHua<span>.</span></h1>
@@ -146,7 +151,7 @@ export default function Home() {
                             <div className="text-center">
                                 <h3>Tiện lợi và an toàn - Đặt chỗ xe ngay hôm nay!</h3>
                                 <p> Tìm kiếm, đặt chỗ và quản lý bãi đậu xe chỉ với vài cú nhấp chuột.</p>
-                                <a className="cta-btn" href="#">Đặt chỗ</a>
+                                <a className="cta-btn" href="/reservation">Đặt chỗ</a>
                             </div>
                         </div>
                     </section>{/* End Cta Section */}
